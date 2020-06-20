@@ -14,7 +14,8 @@ import { spawn, execSync } from 'child_process';
 import { TypedCssModulesPlugin } from 'typed-css-modules-webpack-plugin';
 import baseConfig from './webpack.config.base';
 import CheckNodeEnv from '../internals/scripts/CheckNodeEnv';
-const HtmlWebpackPlugin = require('html-webpack-plugin')
+
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 // When an ESLint server is running, we can't set the NODE_ENV so we'll check if it's
 // at the dev webpack config is not accidentally run in a production environment

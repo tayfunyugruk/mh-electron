@@ -35,8 +35,8 @@
     "test-e2e-live": "node -r @babel/register ./internals/scripts/CheckBuildsExist.js && cross-env NODE_ENV=test testcafe --live electron:./app ./test/e2e/HomePage.e2e.ts",
     "test-watch": "yarn test --watch",
     "dev-web": "cross-env START_HOT=1 node -r @babel/register ./internals/scripts/CheckPortInUse.js && cross-env START_HOT=1 yarn start-web-dev",
-    "start-web-dev" : "cross-env START_HOT=1 node -r @babel/register --max_old_space_size=4096 ./node_modules/webpack-dev-server/bin/webpack-dev-server.js --config configs/webpack.config.web.dev.js --progress --profile --colors",
-    "build-web-prod" : "cross-env START_HOT=1 node -r @babel/register --max_old_space_size=4096 ./node_modules/webpack/bin/webpack.js --config configs/webpack.config.web.prod.js --progress --profile --colors"
+    "start-web-dev": "cross-env START_HOT=1 node -r @babel/register --max_old_space_size=4096 ./node_modules/webpack-dev-server/bin/webpack-dev-server.js --config configs/webpack.config.web.dev.js --progress --profile --colors",
+    "build-web-prod": "cross-env START_HOT=1 node -r @babel/register --max_old_space_size=4096 ./node_modules/webpack/bin/webpack.js --config configs/webpack.config.web.prod.js --progress --profile --colors"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
@@ -275,6 +275,7 @@
     "yarn": "^1.21.1"
   },
   "dependencies": {
+    "@blueprintjs/core": "^3.28.2",
     "@fortawesome/fontawesome-free": "^5.13.0",
     "@hot-loader/react-dom": "^16.13.0",
     "connected-react-router": "^6.8.0",
@@ -283,6 +284,7 @@
     "electron-debug": "^3.0.1",
     "electron-log": "^4.0.6",
     "electron-updater": "^4.2.0",
+    "flexboxgrid": "^6.3.1",
     "history": "^4.10.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
